@@ -1,0 +1,202 @@
+@import './reset.css';
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	display: flex;
+	background-color: #ffffff;
+	max-width: 1400px;
+	height: 800px;
+	padding: 0;
+	margin: 0 auto;
+}
+.leftside-container {
+	width: 465px;
+	height: 800px;
+	background-color: #246a73;
+}
+.hedear-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 75.5px;
+}
+.item-1 {
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 54.47px;
+	padding-left: 29.99px;
+}
+
+.registration {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 202.67px;
+}
+.item-2 {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32.68px;
+}
+.reg {
+	background-color: #ffffff;
+	width: 253px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	text-decoration: none;
+	color: #246a73;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 21.79px;
+	margin-top: 36px;
+	padding: 15px 20px 15px 40px;
+	transition: 0.7s linear; /* Время изменения */
+}
+.reg:hover {
+	color: #ffffff; /* Цвет текста */
+	background: #f66d52; /* Цвет фона */
+}
+
+.line {
+	border: none;
+	max-width: 325px;
+	border-bottom: 2px solid #ffffff;
+	padding-top: 258px;
+	margin-left: 70px;
+}
+
+.account-login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 893px;
+	height: 760px;
+	margin-top: 20px;
+}
+.item-3 {
+	color: #160f29;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 43.58px;
+	margin-top: 182px;
+}
+* {
+	box-sizing: border-box;
+}
+form {
+	position: relative;
+	margin: 0 auto;
+}
+img[class='icon'] {
+	position: absolute;
+	cursor: pointer;
+	padding: 12px;
+}
+input[class='mail'] {
+	border: 2px solid #160f29;
+	border-radius: 2px;
+	opacity: 0.5;
+	width: 463px;
+	height: 57px;
+}
+input[placeholder='example@mail.ru'] {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24.51px;
+	padding-left: 73px;
+}
+input::placeholder {
+	color: #160f29;
+}
+
+img[class='icon2'] {
+	position: absolute;
+	cursor: pointer;
+	padding: 7.07px 12px;
+}
+button[class='eye'] {
+	position: absolute;
+	right: 22px;
+	padding: 20.5px 0;
+	cursor: pointer;
+}
+input[class='password'] {
+	border: 2px solid #160f29;
+	border-radius: 2px;
+	opacity: 0.5;
+	width: 463px;
+	height: 57px;
+}
+input[placeholder='strongPsW2#'] {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24.51px;
+	padding-left: 73px;
+}
+input::placeholder {
+	color: #160f29;
+}
+.form1 {
+	margin-top: 50px;
+}
+.form2 {
+	margin-top: 28px;
+}
+.item-4 {
+	color: #160f29;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24.51px;
+	align-self: flex-start;
+	padding-left: 215px;
+	padding-top: 28px;
+}
+
+.login {
+	background-color: #ffffff;
+	border: 2px solid #160f29;
+	width: 200px;
+	border-radius: 2px;
+	text-decoration: none;
+	color: #160f29;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27.24px;
+	padding: 15px 0px 15px 60px;
+	margin-top: 50px;
+	transition: 0.7s linear; /* Время изменения */
+}
+.login:hover {
+	color: #ffffff; /* Цвет текста */
+	background: #f66d52; /* Цвет фона */
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+	.container {
+		max-width: 1000px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.container {
+		max-width: 768px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 480px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.container {
+		max-width: 100%;
+	}
+}

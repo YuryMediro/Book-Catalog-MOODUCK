@@ -1,0 +1,191 @@
+@import './reset.css';
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+	background-color: #ffffff;
+}
+.header {
+	background-color: #ffffff;
+	padding-top: 21.5px;
+}
+.container {
+	max-width: 1400px;
+	padding: 0 42px;
+	margin: 0 auto;
+}
+/* Header nav */
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo {
+	display: flex;
+	align-items: center;
+}
+.nav-item1 {
+	text-decoration: none;
+	color: #160f29;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 54.47px;
+	width: 214px;
+	height: 54px;
+	padding-left: 30px;
+}
+
+.header-search {
+	display: flex;
+	align-items: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+form {
+	position: relative;
+	margin: 0 auto;
+}
+button[class='book'] {
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	padding-top: 14.67px;
+	right: 16.78px;
+	cursor: pointer;
+}
+input[class='namebook'] {
+	border: 1px solid #160f29;
+	border-radius: 2px;
+	opacity: 0.5;
+	width: 561px;
+	height: 46px;
+	padding-left: 12px;
+}
+
+input[placeholder='Название книги'] {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21.79px;
+}
+input::placeholder {
+	color: #160f29;
+}
+
+.userlogo {
+	padding-left: 23px;
+}
+
+.line {
+	border: none;
+	border-bottom: 2px solid #160f29;
+	opacity: 0.5;
+	padding-top: 30px;
+}
+
+/* book description */
+
+.book-description div {
+	border: 2px solid red;
+}
+.book-description {
+	margin-top: 30px;
+	display: grid;
+	grid-template-areas:
+		'c c c c c c'
+		'p t t t t t'
+		'p a a a a a '
+		'p cb cb cb cb cb'
+		'p rm rm rm rm rm'
+		'p rb rb rb rb rb';
+	grid-template-columns: 291px;
+	grid-template-rows: 30px 53px 75px 180px 79px;
+	column-gap: 59px;
+}
+.category {
+	grid-area: c;
+}
+.photo-book {
+	grid-area: p;
+	/* width: 203px; */
+}
+.title-book {
+	grid-area: t;
+	/* width: 590px; */
+}
+.autor-book {
+	grid-area: a;
+}
+.content-book {
+	grid-area: cb;
+	/* width: 540px; */
+}
+.read-more {
+	grid-area: rm;
+	height: 25px;
+	/* width: 127px; */
+}
+.read-book {
+	grid-area: rb;
+	align-self: center;
+	border: 1px solid #160f29;
+	border-radius: 2px;
+	background-color: #ffffff;
+	padding: 15px 197px 15px 197px;
+	justify-self: start;
+	transition: 0.7s linear; /* Время изменения */
+}
+.read-book:hover {
+	color: #ffffff; /* Цвет текста */
+	background: #b65c34; /* Цвет фона */
+}
+
+.category {
+	color: #160f29;
+	opacity: 0.5;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21.79px;
+	height: 22px;
+}
+
+.title-book {
+	color: #160f29;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 34.05px;
+	height: 34px;
+}
+.autor-book {
+	color: #160f29;
+	opacity: 0.5;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 27.24px;
+	height: 27px;
+}
+
+.item {
+	color: #160f29;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 27.24px;
+	height: 162px;
+}
+.readmore {
+	color: #b65c34;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24.51px;
+	text-decoration: none;
+}
+
+.read {
+	color: #160f29;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 21.79px;
+}
