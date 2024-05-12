@@ -3,229 +3,363 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
-
-/* Header nav */
-.header {
+.wrapper {
+	display: grid;
 	background-color: #ffffff;
-	padding-top: 21.5px;
-}
-.container {
 	max-width: 1400px;
-	padding: 0 42px;
 	margin: 0 auto;
+	grid-template-columns: 1400px;
+	grid-template-rows: minmax(130px, auto) minmax(1500px, auto) minmax(
+			164px,
+			auto
+		);
+	row-gap: 30px;
 }
-
-.header-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.header-logo {
-	display: flex;
-	align-items: center;
-}
-.nav-item1 {
-	text-decoration: none;
-	color: #160f29;
-	font-size: 40px;
-	font-weight: 700;
-	line-height: 54.47px;
-	width: 214px;
-	height: 54px;
-	padding-left: 30px;
-}
-
-.header-search {
-	display: flex;
-	align-items: center;
-}
-
-* {
-	box-sizing: border-box;
-}
-form {
-	position: relative;
-	margin: 0 auto;
-}
-button[class='book'] {
-	height: 26px;
-	width: 26px;
-	position: absolute;
-	padding-top: 14.67px;
-	right: 16.78px;
-	cursor: pointer;
-}
-input[class='namebook'] {
-	border: 1px solid #160f29;
-	border-radius: 2px;
-	opacity: 0.5;
-	width: 561px;
-	height: 46px;
-	padding-left: 12px;
-}
-
-input[placeholder='Название книги'] {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 21.79px;
-}
-input::placeholder {
+/* .grid-item {
+	border: 1px solid #000;
+}  */
+.text-color {
 	color: #160f29;
 }
 
-.userlogo {
-	padding-left: 23px;
+.header {
+	display: grid;
+	grid-template-columns: 325px 357px 624px;
+	grid-template-rows: 74px;
+	padding: 20px 42px 0 42px;
+
+	.header_logo {
+		display: flex;
+		align-items: center;
+	}
+	.header_title {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 54.47px;
+		padding-left: 20px;
+	}
+
+	.header-search {
+		display: flex;
+		align-items: center;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+	form {
+		position: relative;
+		margin: 0 auto;
+	}
+	button[class='book'] {
+		height: 26px;
+		width: 26px;
+		position: absolute;
+		padding-top: 14.67px;
+		right: 16.78px;
+		cursor: pointer;
+	}
+	input[class='namebook'] {
+		border: 1px solid #160f29;
+		border-radius: 2px;
+		opacity: 0.5;
+		width: 561px;
+		height: 46px;
+		padding-left: 12px;
+	}
+
+	input[placeholder='Название книги'] {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 21.79px;
+	}
+	input::placeholder {
+		color: #160f29;
+	}
+
+	.userlogo {
+		padding-left: 23px;
+	}
+	.line {
+		border: none;
+		border-bottom: 1px solid #160f29;
+		opacity: 0.5;
+		grid-column: 1/4;
+	}
 }
 
-.line {
-	border: none;
-	border-bottom: 2px solid #160f29;
-	opacity: 0.5;
-	padding-top: 30px;
-}
-
-/* Main row */
 .main {
 	display: grid;
-	padding-top: 30px;
-}
-.search-book {
-	border: 1px solid #160f29;
-	max-width: 380px;
-	height: 782px;
-	border-radius: 2px;
-	padding: 30px 30px 0 30px;
-}
-.title-search {
-	color: #160f29;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 21.79px;
-}
+	grid-template-columns: 380px repeat(4, 200px);
+	grid-template-rows: repeat(3, 464px);
+	column-gap: 34px;
+	row-gap: 20px;
+	padding: 0 42px 0 42px;
 
-.title-line {
-	border: none;
-	border-bottom: 1px solid #160f29;
-	opacity: 0.5;
-	margin: 16.49px 0 20.51px 0;
-}
+	.search-book {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 22px 22px 22px 302px 22px 31px 227px 42px 42px;
 
-/* Настройка метки (контейнера) */
-.main-checkbox {
-	display: block;
-	position: relative;
-	padding-left: 25px;
-	margin-bottom: 12px;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 21.79px;
-	color: #160f29;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
+		grid-row: 1/4;
+		border-radius: 2px;
+		padding: 30px 30px 0 30px;
+		row-gap: 10px;
+	}
+	.title-search {
+		color: #160f29;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 21.79px;
+	}
+	.book-search {
+		display: grid;
+		row-gap: 10px;
+	}
+	.search-autor {
+		display: grid;
+		row-gap: 10px;
+	}
+	.title-line {
+		border: none;
+		border-bottom: 1px solid #160f29;
+		opacity: 0.5;
+		margin-bottom: 10px;
+	}
 
-/* Скрыть флажок браузера по умолчанию */
-.main-checkbox input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
+	/* Настройка метки (контейнера) */
+	.main-checkbox {
+		display: block;
+		position: relative;
+		padding-left: 25px;
+		/* margin-bottom: 12px; */
+		cursor: pointer;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 21.79px;
+		color: #160f29;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
 
-/* Создание пользовательского флажка */
-.checkmark {
-	position: absolute;
-	top: 3.7px;
-	left: 0;
-	height: 15px;
-	width: 15px;
-	border: 1px solid #160f29;
-	border-radius: 2px;
-	background-color: #ffffff;
-}
+	/* Скрыть флажок браузера по умолчанию */
+	.main-checkbox input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
 
-/* При наведении курсора мыши добавьте серый цвет фона */
-.main-checkbox:hover input ~ .checkmark {
-	background-color: #ccc;
-}
+	/* Создание пользовательского флажка */
+	.checkmark {
+		position: absolute;
+		top: 3.7px;
+		left: 0;
+		height: 15px;
+		width: 15px;
+		border: 1px solid #160f29;
+		border-radius: 2px;
+		background-color: #ffffff;
+	}
 
-/* Если флажок установлен, добавьте синий фон */
-.main-checkbox input:checked ~ .checkmark {
-	background-color: #160f29;
-}
+	/* При наведении курсора мыши добавьте серый цвет фона */
+	.main-checkbox:hover input ~ .checkmark {
+		background-color: #ccc;
+	}
 
-/* Создайте флажок/индикатор (скрытый, если он не установлен) */
-.checkmark:after {
-	content: '';
-	position: absolute;
-	display: none;
-}
+	/* Если флажок установлен, добавьте синий фон */
+	.main-checkbox input:checked ~ .checkmark {
+		background-color: #160f29;
+	}
 
-/* Показывать галочку при установке флажка */
-.main-checkbox input:checked ~ .checkmark:after {
-	display: block;
-}
+	/* Создайте флажок/индикатор (скрытый, если он не установлен) */
+	.checkmark:after {
+		content: '';
+		position: absolute;
+		display: none;
+	}
 
-/* Стиль галочки/индикатора */
-.main-checkbox .checkmark:after {
-	left: 3.5px;
-	top: 1px;
-	width: 5px;
-	height: 9px;
-	border: solid #ffffff;
-	border-width: 0 1.5px 1.5px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
+	/* Показывать галочку при установке флажка */
+	.main-checkbox input:checked ~ .checkmark:after {
+		display: block;
+	}
 
-.genre-selection {
+	/* Стиль галочки/индикатора */
+	.main-checkbox .checkmark:after {
+		left: 3.5px;
+		top: 1px;
+		width: 5px;
+		height: 9px;
+		border: solid #ffffff;
+		border-width: 0 1.5px 1.5px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	.genre-selection {
+		display: grid;
+		grid-template-rows: repeat(8, 27.5px);
+		margin-top: 10px;
+		overflow-y: scroll;
+	}
+	.genre-selection2 {
+		display: grid;
+		grid-template-rows: repeat(6, 27.5px);
+		margin-top: 10px;
+		overflow-y: scroll;
+	}
+	.apply-filter {
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+		border: 1px solid #160f29;
+		background-color: #ffffff;
+		border-radius: 2px;
+
+		transition: 0.7s;
+		background-image: linear-gradient(
+			to right,
+			#b65c34,
+			#a0d8ef
+		); /* Параметры градиента */
+		background-repeat: no-repeat; /* Фон не повторяется */
+		background-size: 0 100%; /* Градиент пока не показываем */
+	}
+	.apply-filter:hover {
+		background-size: 100% 100%; /* Отображаем градиент */
+	}
+	.apply {
+		color: #160f29;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 21.79px;
+	}
+	.reset-filter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #160f29;
+		background-color: #160f29;
+		border-radius: 2px;
+	}
+
+	.reset {
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 21.79px;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+	form {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	button[class='autor'] {
+		height: 26px;
+		width: 26px;
+		position: absolute;
+		padding-top: 6.67px;
+		right: 10px;
+		cursor: pointer;
+	}
+	input[class='nameautor'] {
+		border: 1px solid #160f29;
+		border-radius: 2px;
+		opacity: 0.5;
+		width: 320px;
+		height: 30px;
+		padding: 0 12px 0 12px;
+	}
+
+	input[placeholder='Имя автора'] {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 21.79px;
+	}
+	input::placeholder {
+		color: #160f29;
+	}
+
+	.book-catalog {
+		display: grid;
+		align-items: start;
+	}
+
+	.book-name {
+		color: #160f29;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 21.79px;
+	}
+	.autor-name {
+		color: #160f29;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 21.79px;
+		opacity: 0.5;
+	}
+	.read-book {
+		align-self: end;
+		border: 1px solid #160f29;
+		background-color: #ffffff;
+		border-radius: 2px;
+		padding: 10px 20px 10px 20px;
+		transition: 0.7s;
+		background-image: linear-gradient(
+			to right,
+			#b65c34,
+			#a0d8ef
+		); /* Параметры градиента */
+		background-repeat: no-repeat; /* Фон не повторяется */
+		background-size: 0 100%; /* Градиент пока не показываем */
+	}
+	.read-book:hover {
+		background-size: 100% 100%; /* Отображаем градиент */
+	}
+	.read {
+		color: #160f29;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 21.79px;
+	}
+}
+.footer {
 	display: grid;
-	grid-template-rows: repeat(8, 27.5px);
-	margin-top: 10px;
-	overflow-y: scroll;
-}
+	grid-template-columns: 42px 1fr 42px;
+	grid-template-rows: 1fr 30px;
 
-* {
-	box-sizing: border-box;
-}
-form {
-	position: relative;
-	margin: 0 auto;
-}
+	.footer-container {
+		background-color: #246a73;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
 
-button[class='autor'] {
-	height: 26px;
-	width: 26px;
-	position: absolute;
-	padding-top: 6.67px;
-	right: 10px;
-	cursor: pointer;
-}
-input[class='nameautor'] {
-	border: 1px solid #160f29;
-	border-radius: 2px;
-	opacity: 0.5;
-	width: 320px;
-	height: 30px;
-	padding: 0 12px 0 12px;
-}
-
-input[placeholder='Имя автора'] {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 21.79px;
-}
-input::placeholder {
-	color: #160f29;
-}
-
-.search-autor {
-	display: grid;
-	padding-top: 20px;
-	
+	.footer-title {
+		color: #ffffff;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 54.47px;
+		padding-left: 20px;
+	}
+	.xz {
+		text-align: center;
+		color: #160f29;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19.07px;
+		padding-top: 10px;
+		grid-column-start: 1;
+		grid-column-end: 6;
+	}
 }

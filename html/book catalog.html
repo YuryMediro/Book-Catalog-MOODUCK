@@ -17,132 +17,324 @@
 		/>
 	</head>
 	<body>
-		<header class="header">
-			<div class="container">
-				<!-- Header nav -->
-				<div class="header-nav">
-					<div class="header-logo">
+		<div class="wrapper">
+			<div class="grid-item header">
+				<div class="grid-item header_logo">
+					<img
+						class="icon-duck"
+						src="/Figma Book Catalog MOODUCK/img/book catalog/duck.svg"
+						alt=""
+					/>
+					<a
+						href="/Figma Book Catalog MOODUCK/html/book catalog.html"
+						class="text-color header_title"
+						>MOODUCK</a
+					>
+				</div>
+				<div class=""></div>
+				<div class="grid-item header-search">
+					<form class="search-book" action="#!">
+						<input class="namebook" type="text" placeholder="Название книги" />
+						<button class="book" type="submit">
+							<img
+								src="/Figma Book Catalog MOODUCK/img/book catalog/iconsearch.svg"
+								alt=""
+							/>
+						</button>
+					</form>
+					<a
+						class="user-logo"
+						href="/Figma Book Catalog MOODUCK/html/personal account.html"
+					>
 						<img
-							src="/Figma Book Catalog MOODUCK/img/book catalog/duck.png"
+							class="userlogo"
+							src="/Figma Book Catalog MOODUCK/img/book catalog/userlogo.svg"
 							alt=""
 						/>
-						<a class="nav-item1" href="#!">MOODUCK</a>
+					</a>
+				</div>
+				<hr class="line" />
+			</div>
+			<div class="grid-item main">
+				<div class="grid-item search-book">
+					<h1 class="grid-item text-color title-search">КАТЕГОРИИ</h1>
+					<hr class="title-line" />
+					<h1 class="grid-item text-color title-search">ВСЕ КНИГИ</h1>
+					<div class="grid-item genre-selection book-search">
+						<label class="grid-item text-color main-checkbox"
+							>Детективы
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Научная фантастика
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Рассказы
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Сказки
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Классика
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Приключения
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Поэмы
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Хорроры
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
 					</div>
-					<div class="header-search">
+
+					<h1 class="grid-item text-color title-search">АВТОР</h1>
+					<div class="grid-item autor-search">
 						<form action="#!">
-							<input
-								class="namebook"
-								type="text"
-								placeholder="Название книги"
-							/>
-							<button class="book" type="submit">
+							<input class="nameautor" type="text" placeholder="Имя автора" />
+							<button class="autor" type="submit">
 								<img
-									src="/Figma Book Catalog MOODUCK/img/book catalog/iconsearch.png"
+									src="/Figma Book Catalog MOODUCK/img/book catalog/iconsearch.svg"
 									alt=""
 								/>
 							</button>
 						</form>
-						<img
-							class="userlogo"
-							src="/Figma Book Catalog MOODUCK/img/book catalog/userlogo.png"
-							alt=""
-						/>
+					</div>
+					<div class="grid-item search-autor genre-selection2">
+						<label class="grid-item text-color main-checkbox"
+							>Агата Кристи
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Александр Солдатов
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Анастасия Цыганова
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Олег Платов
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Роман Фетисов
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+						<label class="grid-item text-color main-checkbox"
+							>Эрих Мария Ремарк
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="grid-item apply-filter">
+						<a href="#!" class="apply">ПРИМЕНИТЬ ФИЛЬТРЫ</a>
+					</div>
+					<div class="grid-item reset-filter">
+						<a href="#!" class="reset">ОЧИСТИТЬ ФИЛЬТРЫ</a>
 					</div>
 				</div>
-				<div class="line"></div>
-				<!-- Main content -->
-				<div class="main">
-					<div class="search-book">
-						<h1 class="title-search">КАТЕГОРИИ</h1>
-						<div class="title-line"></div>
-						<h1 class="title-search">ВСЕ КНИГИ</h1>
-						<div class="genre-selection">
-							<label class="main-checkbox"
-								>Детективы
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Научная фантастика
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Рассказы
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Сказки
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Классика
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Приключения
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Поэмы
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Хорроры
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-						</div>
-						<div class="search-autor">
-							<h1 class="title-search">АВТОР</h1>
-							<form action="#!">
-								<input class="nameautor" type="text" placeholder="Имя автора" />
-								<button class="autor" type="submit">
-									<img
-										src="/Figma Book Catalog MOODUCK/img/book catalog/iconsearch.png"
-										alt=""
-									/>
-								</button>
-							</form>
-							<label class="main-checkbox"
-								>Агата Кристи
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Александр Солдатов
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Анастасия Цыганова
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Олег Платов
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Роман Фетисов
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="main-checkbox"
-								>Эрих Мария Ремарк
-								<input type="checkbox" />
-								<span class="checkmark"></span>
-							</label>
-						</div>
+
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book1.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">
+						Красная ягода. Черная земля. Сборник стихов
+					</h1>
+					<h2 class="grid-item autor-name">Анна Долгарева</h2>
+					<div class="grid-item read-book">
+						<a
+							href="/Figma Book Catalog MOODUCK/html/main page book .html"
+							class="read"
+							>ХОЧУ ПРОЧИТАТЬ</a
+						>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book2.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">How Innovation Works</h1>
+					<h2 class="grid-item autor-name">Matt Ridely</h2>
+					<div class="grid-item read-book">
+						<a href="#!" class="read">ХОЧУ ПРОЧИТАТЬ</a>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book1.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">
+						Красная ягода. Черная земля. Сборник стихов
+					</h1>
+					<h2 class="grid-item autor-name">Анна Долгарева</h2>
+					<div class="grid-item read-book">
+						<a
+							href="/Figma Book Catalog MOODUCK/html/main page book .html"
+							class="read"
+							>ХОЧУ ПРОЧИТАТЬ</a
+						>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book2.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">How Innovation Works</h1>
+					<h2 class="grid-item autor-name">Matt Ridely</h2>
+					<div class="grid-item read-book">
+						<a href="#!" class="read">ХОЧУ ПРОЧИТАТЬ</a>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book1.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">
+						Красная ягода. Черная земля. Сборник стихов
+					</h1>
+					<h2 class="grid-item autor-name">Анна Долгарева</h2>
+					<div class="grid-item read-book">
+						<a
+							href="/Figma Book Catalog MOODUCK/html/main page book .html"
+							class="read"
+							>ХОЧУ ПРОЧИТАТЬ</a
+						>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book2.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">How Innovation Works</h1>
+					<h2 class="grid-item autor-name">Matt Ridely</h2>
+					<div class="grid-item read-book">
+						<a href="#!" class="read">ХОЧУ ПРОЧИТАТЬ</a>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book1.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">
+						Красная ягода. Черная земля. Сборник стихов
+					</h1>
+					<h2 class="grid-item autor-name">Анна Долгарева</h2>
+					<div class="grid-item read-book">
+						<a
+							href="/Figma Book Catalog MOODUCK/html/main page book .html"
+							class="read"
+							>ХОЧУ ПРОЧИТАТЬ</a
+						>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book2.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">How Innovation Works</h1>
+					<h2 class="grid-item autor-name">Matt Ridely</h2>
+					<div class="grid-item read-book">
+						<a href="#!" class="read">ХОЧУ ПРОЧИТАТЬ</a>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book1.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">
+						Красная ягода. Черная земля. Сборник стихов
+					</h1>
+					<h2 class="grid-item autor-name">Анна Долгарева</h2>
+					<div class="grid-item read-book">
+						<a
+							href="/Figma Book Catalog MOODUCK/html/main page book .html"
+							class="read"
+							>ХОЧУ ПРОЧИТАТЬ</a
+						>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book2.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">How Innovation Works</h1>
+					<h2 class="grid-item autor-name">Matt Ridely</h2>
+					<div class="grid-item read-book">
+						<a href="#!" class="read">ХОЧУ ПРОЧИТАТЬ</a>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book1.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">
+						Красная ягода. Черная земля. Сборник стихов
+					</h1>
+					<h2 class="grid-item autor-name">Анна Долгарева</h2>
+					<div class="grid-item read-book">
+						<a
+							href="/Figma Book Catalog MOODUCK/html/main page book .html"
+							class="read"
+							>ХОЧУ ПРОЧИТАТЬ</a
+						>
+					</div>
+				</div>
+				<div class="grid-item book-catalog">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/book catalog/book2.png"
+						alt=""
+					/>
+					<h1 class="grid-item book-name">How Innovation Works</h1>
+					<h2 class="grid-item autor-name">Matt Ridely</h2>
+					<div class="grid-item read-book">
+						<a href="#!" class="read">ХОЧУ ПРОЧИТАТЬ</a>
 					</div>
 				</div>
 			</div>
-		</header>
+			<div class="grid-item footer">
+				<div class="grid-item footer-container">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/personal account/duck.svg"
+						alt=""
+					/>
+					<h1 class="footer-title">MOODUCK</h1>
+				</div>
+
+				<div class="xz">© Mooduck 2023. All rights reserved</div>
+			</div>
+		</div>
 	</body>
 </html>

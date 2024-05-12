@@ -16,264 +16,350 @@
 		/>
 	</head>
 	<body>
-		<header class="header">
-			<div class="container">
-				<!-- Header nav -->
-				<div class="header-nav">
-					<div class="header-logo">
+		<div class="wrapper">
+			<div class="grid-item header">
+				<div class="grid-item header_logo">
+					<img
+						class="icon-duck"
+						src="/Figma Book Catalog MOODUCK/img/main page book/duck.svg"
+						alt=""
+					/>
+					<a
+						href="/Figma Book Catalog MOODUCK/html/book catalog.html"
+						class="text_color header_title"
+						>MOODUCK</a
+					>
+					<a
+						href="/Figma Book Catalog MOODUCK/html/personal account.html"
+						class="mobile-userlogo"
+					>
 						<img
-							src="/Figma Book Catalog MOODUCK/img/book catalog/duck.png"
+							class="mobile-icon-logo"
+							src="/Figma Book Catalog MOODUCK/img/main page book/userlogo.svg"
 							alt=""
 						/>
-						<a class="nav-item1" href="#!">MOODUCK</a>
-					</div>
-					<div class="header-search">
-						<form action="#!">
-							<input
-								class="namebook"
-								type="text"
-								placeholder="Название книги"
-							/>
-							<button class="book" type="submit">
-								<img
-									src="/Figma Book Catalog MOODUCK/img/book catalog/iconsearch.png"
-									alt=""
-								/>
-							</button>
-						</form>
-						<a href="#!">
+					</a>
+				</div>
+				<div class=""></div>
+				<div class="grid-item header-search">
+					<form class="search-book" action="#!">
+						<input class="namebook" type="text" placeholder="Название книги" />
+						<button class="book" type="submit">
 							<img
-								class="userlogo"
-								src="/Figma Book Catalog MOODUCK/img/book catalog/userlogo.png"
+								src="/Figma Book Catalog MOODUCK/img/main page book/iconsearch.svg"
 								alt=""
 							/>
-						</a>
-					</div>
-				</div>
-				<div class="line"></div>
-				<!-- book description -->
-				<div class="book-description">
-					<div class="category">
-						Все книги / Красная ягода. Черная земля. Сборник стихов
-					</div>
-					<div class="photo-book">
+						</button>
+					</form>
+					<a
+						class="user-logo"
+						href="/Figma Book Catalog MOODUCK/html/personal account.html"
+					>
 						<img
-							src="/Figma Book Catalog MOODUCK/img/main page book/book1.png"
-							alt="Красная ягода. Черная земля. Анна Долгарева"
-							width="288px"
-							height="440px"
+							class="userlogo"
+							src="/Figma Book Catalog MOODUCK/img/main page book/userlogo.svg"
+							alt=""
 						/>
-					</div>
-					<div class="title-book">
-						Красная ягода. Черная земля. Сборник стихов
-					</div>
-					<div class="autor-book">Анна Долгарева</div>
-					<div class="content-book item">
-						Анна Долгарева — поэтесса, военкор и журналист, <br />победитель
-						множества литературных конкурсов и <br />самый молодой лауреат
-						Григорьевской премии. <br />Поэзия Анны Долгаревой поднимает вечные
-						вопросы <br />бытия и отвечает на них языком поколения, рано
-						<br />повзрослевшего в 1990-е...
-					</div>
-					<div class="read-more">
-						<a href="#!" class="readmore">Читать далее</a>
-					</div>
-					<div class="read-book">
-						<a href="#!" class="read">ХОЧУ ПРОЧИТАТЬ</a>
-					</div>
-					<div class="char">
+					</a>
+				</div>
+				<hr class="line" />
+			</div>
+			<div class="grid-item book-description">
+				<div class="grid-item category">
+					Все книги / Красная ягода. Черная земля. Сборник стихов
+				</div>
+				<div class="grid-item photo-book">
+					<img
+						class="photobook"
+						src="/Figma Book Catalog MOODUCK/img/main page book/book1.png"
+						alt="Красная ягода. Черная земля. Анна Долгарева"
+						width="288px"
+						height="440px"
+					/>
+				</div>
+				<div class="grid-item title-book">
+					Красная ягода. Черная земля. Сборник стихов
+				</div>
+				<div class="grid-item autor-book">Анна Долгарева</div>
+				<div class="grid-item content-book item">
+					Анна Долгарева — поэтесса, военкор и журналист, <br />победитель
+					множества литературных конкурсов и <br />самый молодой лауреат
+					Григорьевской премии. <br />Поэзия Анны Долгаревой поднимает вечные
+					вопросы <br />бытия и отвечает на них языком поколения, рано
+					<br />повзрослевшего в 1990-е...
+				</div>
+				<div class="grid-item tablet-content-book tablet-item">
+					Анна Долгарева — поэтесса, военкор и журналист, <br />победитель
+					множества литературных конкурсов и самый <br />молодой лауреат
+					Григорьевской премии. Поэзия Анны <br />Долгаревой поднимает вечные
+					вопросы бытия и отвечает <br />на них языком поколения, рано
+					повзрослевшего в 1990-е...
+				</div>
+				<div class="grid-item mobile-content-book mobole-item">
+					Анна Долгарева — поэтесса, военкор и журналист, <br />победитель
+					множества литературных конкурсов и <br />самый молодой лауреат
+					Григорьевской премии. <br />Поэзия Анны Долгаревой поднимает вечные
+					<br />вопросы бытия и отвечает на них языком <br />поколения, рано
+					повзрослевшего в 1990-е...
+				</div>
+				<div class="grid-item read-more">
+					<a href="#О книге" class="readmore">Читать далее</a>
+				</div>
+
+				<div class="grid-item read-book">
+					<a href="#!" class="read">ХОЧУ ПРОЧИТАТЬ</a>
+				</div>
+				<div class="grid-item mobile-read-book">
+					<a href="#!" class="mobile-read">ХОЧУ ПРОЧИТАТЬ</a>
+				</div>
+				<div class="grid-item char">
+					<p>Жанр</p>
+					<p>Издательство</p>
+					<p>Серия</p>
+					<p>Количество страниц</p>
+				</div>
+				<div class="grid-item char1">
+					<p>Поэзия</p>
+					<p>АСТ</p>
+					<p>Мысли о Родине</p>
+					<p>224</p>
+				</div>
+				<div class="grid-item all-haracteristics">
+					<a href="#О книге" class="grid-item item2">Все характеристики</a>
+				</div>
+				<hr class="line2" />
+			</div>
+			<div class="grid-item about_the_book">
+				<a name="О книге" class="grid_item color_text title">О книге</a>
+				<div class="grid_item color_text main_text">
+					Анна Долгарева — поэтесса, военкор и журналист, победитель множества
+					литературных <br />конкурсов и самый молодой лауреат Григорьевской
+					премии. Поэзия Анны Долгаревой <br />поднимает вечные вопросы бытия и
+					отвечает на них языком поколения, рано повзрослевшего <br />в 1990-е,
+					пережившего распад большой страны как личную драму, любившего и
+					терявшего <br />любовь в 2000-е и сейчас взвалившего на свои плечи
+					ответственность за судьбу России. Стихи <br />Анны — пронзительные,
+					бескомпромиссные, нервные — написаны на разрыв души, с <br />глубокой
+					болью и любовью к Родине, Богу, людям, хрупкому миру вокруг нас.
+				</div>
+				<div class="grid_item tablet-main_text">
+					Анна Долгарева — поэтесса, военкор и журналист, победитель множества
+					литературных <br />конкурсов и самый молодой лауреат Григорьевской
+					премии. Поэзия Анны Долгаревой <br />поднимает вечные вопросы бытия и
+					отвечает на них языком поколения, рано <br />повзрослевшего в 1990-е,
+					пережившего распад большой страны как личную драму, <br />любившего и
+					терявшего любовь в 2000-е и сейчас взвалившего на свои плечи
+					<br />ответственность за судьбу России. Стихи Анны — пронзительные,
+					бескомпромиссные, <br />нервные — написаны на разрыв души, с глубокой
+					болью и любовью к Родине, Богу, людям, <br />хрупкому миру вокруг нас.
+				</div>
+				<div class="grid_item mobile-main_text">
+					Анна Долгарева — поэтесса, военкор и журналист, <br />победитель
+					множества литературных конкурсов и <br />самый молодой лауреат
+					Григорьевской премии. <br />Поэзия Анны Долгаревой поднимает вечные
+					<br />вопросы бытия и отвечает на них языком <br />поколения, рано
+					повзрослевшего в 1990-е, <br />пережившего распад большой страны как
+					личную <br />драму, любившего и <br />терявшего любовь в 2000-е и
+					сейчас взвалившего на свои плечи <br />ответственность за судьбу
+					России. Стихи Анны — <br />пронзительные, бескомпромиссные, нервные —
+					<br />написаны на разрыв души, с глубокой болью и <br />любовью к
+					Родине, Богу, людям, хрупкому миру <br />вокруг нас.
+				</div>
+
+				<a class="grid_item color_text characteristic_title">
+					Характеристики
+				</a>
+				<div class="grid_item full_char">
+					<div class="item3">
 						<p>Жанр</p>
 						<p>Издательство</p>
 						<p>Серия</p>
-						<p>Количество страниц</p>
+						<p>Переплет</p>
 					</div>
-					<div class="char1">
+					<div class="grid-item color_text item4">
 						<p>Поэзия</p>
 						<p>АСТ</p>
 						<p>Мысли о Родине</p>
+						<p>Твердый</p>
+					</div>
+				</div>
+				<div class="grid_item full_char full_char1">
+					<div class="item3">
+						<p>Художник</p>
+						<p>Переводчик</p>
+						<p>Год издания</p>
+						<p>Количество страниц</p>
+					</div>
+					<div class="grid-item color_text item4">
+						<p>Мельникова Елена</p>
+						<p>Юсим Марк</p>
+						<p>2023</p>
 						<p>224</p>
 					</div>
-					<div class="all-haracteristics">
-						<a href="#!" class="item2">Все характеристики</a>
-					</div>
-					<div class="line2"></div>
 				</div>
-				<!-- ABOUT THE BOOK -->
-				<div class="about_the_book">
-					<div class="grid_item color_text title">О книге</div>
-					<div class="grid_item color_text main_text">
-						Анна Долгарева — поэтесса, военкор и журналист, победитель множества
-						литературных <br />конкурсов и самый молодой лауреат Григорьевской
-						премии. Поэзия Анны Долгаревой <br />поднимает вечные вопросы бытия
-						и отвечает на них языком поколения, рано повзрослевшего <br />в
-						1990-е, пережившего распад большой страны как личную драму,
-						любившего и терявшего <br />любовь в 2000-е и сейчас взвалившего на
-						свои плечи ответственность за судьбу России. Стихи <br />Анны —
-						пронзительные, бескомпромиссные, нервные — написаны на разрыв души,
-						с <br />глубокой болью и любовью к Родине, Богу, людям, хрупкому
-						миру вокруг нас.
+				<div class="grid_item mobile-full_char">
+					<div class="mobile-item3">
+						<p>Жанр</p>
+						<p>Издательство</p>
+						<p>Серия</p>
+						<p>Переплет</p>
 					</div>
-					<div class="grid_item color_text characteristic_title">
-						Характеристики
-					</div>
-					<div class="grid_item full_char">
-						<div class="item3">
-							<p>Жанр</p>
-							<p>Издательство</p>
-							<p>Серия</p>
-							<p>Переплет</p>
-						</div>
-						<div class="color_text item4">
-							<p>Поэзия</p>
-							<p>АСТ</p>
-							<p>Мысли о Родине</p>
-							<p>Твердый</p>
-						</div>
-					</div>
-					<div class="grid_item full_char">
-						<div class="item3">
-							<p>Художник</p>
-							<p>Переводчик</p>
-							<p>Год издания</p>
-							<p>Количество страниц</p>
-						</div>
-						<div class="color_text item4">
-							<p>Мельникова Елена</p>
-							<p>Юсим Марк</p>
-							<p>2023</p>
-							<p>224</p>
-						</div>
-					</div>
-					<div class="grid_item line3"></div>
-				</div>
-				<!-- book comments -->
-				<div class="book_comments">
-					<div class="grid_item1 commentaries">
-						<div class="commentaries_title color_text">Комментарии</div>
-						<div class="border_comment">
-							<a class="color_text write_comment" href="#!"
-								>НАПИСАТЬ КОММЕНТАРИЙ</a
-							>
-						</div>
-					</div>
-					<div class="grid_item1 feedback1">
-						<div class="name_data">
-							<h3>Роман Фетисов</h3>
-							<h3 class="data">06.06.2023</h3>
-						</div>
-						<h1 class="commit">Одна из любимых историй</h1>
-						<div class="all_commit">
-							Смотрел фильм и постановку в театре, но книга это отдельная
-							любовь. Множество интересных цитат и мыслей которые
-							<br />приходиться перечитывать по несколько раз что бы полностью
-							уловить мысль которую закладывал автор. Огромное <br />количество
-							противоречивых моментов от которых испытываешь различные эмоции и
-							хочешь читать дальше. Советую всем, <br />одна из тех книг с
-							которой можно начать читать классику.
-						</div>
-						<a class="show_more" href="#!">Показать ещё</a>
-						<div class="rating">
-							<div class="rating-area">
-								<input type="radio" id="star-5" name="rating" value="5" />
-								<label for="star-5" title="Оценка «5»"></label>
-								<input type="radio" id="star-4" name="rating" value="4" />
-								<label for="star-4" title="Оценка «4»"></label>
-								<input type="radio" id="star-3" name="rating" value="3" />
-								<label for="star-3" title="Оценка «3»"></label>
-								<input type="radio" id="star-2" name="rating" value="2" />
-								<label for="star-2" title="Оценка «2»"></label>
-								<input type="radio" id="star-1" name="rating" value="1" />
-								<label for="star-1" title="Оценка «1»"></label>
-							</div>
-							<div class="likedis-container">
-								<button class="like-button">👍</button>
-								<span class="like-count">0</span>
-								<button class="like-button">👎</button>
-								<span class="like-count">0</span>
-							</div>
-						</div>
-					</div>
-					<div class="grid_item1 feedback2">
-						<div class="name_data">
-							<h3>Роман Закупочный</h3>
-							<h3 class="data">03.06.2023</h3>
-						</div>
-						<h1 class="commit">Якупил книгу</h1>
-						<div class="all_commit">
-							Книга пришла целой, невредимой. Пришла в хорошем качестве. С нее
-							начал знакомиться с классикой. Портрет Дориана Грея <br />очень
-							интересное произведение, я не пожалела, что начала читать классику
-							именно с этой книги. Всем советую. Цена <br />приемлемая.
-						</div>
-						<a class="show_more" href="#!">Показать ещё</a>
-						<div class="rating">
-							<div class="rating-area2">
-								<input type="radio" id="star-5" name="rating" value="5" />
-								<label for="star-5" title="Оценка «5»"></label>
-								<input type="radio" id="star-4" name="rating" value="4" />
-								<label for="star-4" title="Оценка «4»"></label>
-								<input type="radio" id="star-3" name="rating" value="3" />
-								<label for="star-3" title="Оценка «3»"></label>
-								<input type="radio" id="star-2" name="rating" value="2" />
-								<label for="star-2" title="Оценка «2»"></label>
-								<input type="radio" id="star-1" name="rating" value="1" />
-								<label for="star-1" title="Оценка «1»"></label>
-							</div>
-							<div class="likedis-container">
-								<button class="like-button">👍</button>
-								<span class="like-count">0</span>
-								<button class="like-button">👎</button>
-								<span class="like-count">0</span>
-							</div>
-						</div>
-					</div>
-					<div class="grid_item1 feedback3">
-						<div class="name_data">
-							<h3>Роман Биполярный</h3>
-							<h3 class="data">07.06.2023</h3>
-						</div>
-						<h1 class="commit">Нет</h1>
-						<div class="all_commit">
-							Читал лет 10 назад, тогда она мне совсем не зашла. Решил
-							перечитать сейчас уже в более осознанном возрасте и , о чудо,
-							<br />ничего не изменилось, она снова мне не понравилась. Убежден,
-							что это одна из самых переоцененных книг на свете. <br />Абсолютно
-							ничего особо интересного и цепляющего в ней нет. Наверное, это
-							первый раз, когда я бы посоветовал посмотреть <br />экранизацию,
-							чтобы не тратить время на прочтение данного произведения.
-						</div>
-						<a class="show_more" href="#!">Показать ещё</a>
-						<div class="rating">
-							<div class="rating-area3">
-								<input type="radio" id="star-5" name="rating" value="5" />
-								<label for="star-5" title="Оценка «5»"></label>
-								<input type="radio" id="star-4" name="rating" value="4" />
-								<label for="star-4" title="Оценка «4»"></label>
-								<input type="radio" id="star-3" name="rating" value="3" />
-								<label for="star-3" title="Оценка «3»"></label>
-								<input type="radio" id="star-2" name="rating" value="2" />
-								<label for="star-2" title="Оценка «2»"></label>
-								<input type="radio" id="star-1" name="rating" value="1" />
-								<label for="star-1" title="Оценка «1»"></label>
-							</div>
-							<div class="likedis-container">
-								<button class="like-button">👍</button>
-								<span class="like-count">0</span>
-								<button class="like-button">👎</button>
-								<span class="like-count">0</span>
-							</div>
-						</div>
-					</div>
-					<div class="grid_item1">
-						<a class="more-commit" href="#!">Показать больше комментариев</a>
+					<div class="grid-item color_text mobile-item4">
+						<p>Поэзия</p>
+						<p>АСТ</p>
+						<p>Мысли о Родине</p>
+						<p>Твердый</p>
 					</div>
 				</div>
-				<div class="footer">
-					<img src="/Figma Book Catalog MOODUCK/img/main page book/duck.png" alt="" />
-					<div class="footer-title">MOODUCK</div>
+				<div class="grid_item mobile-full_char2">
+					<div class="mobile-item3">
+						<p>Художник</p>
+						<p>Переводчик</p>
+						<p>Год издания</p>
+						<p>Количество страниц</p>
+					</div>
+					<div class="grid-item color_text mobile-item4">
+						<p>Мельникова Елена</p>
+						<p>Юсим Марк</p>
+						<p>2023</p>
+						<p>224</p>
+					</div>
 				</div>
-				<div class="xz">© Mooduck 2023. All rights reserved</div>
+				<hr class="grid_item line3" />
 			</div>
-		</header>
+			<div class="grid-item book_comments">
+				<div class="grid-item commentaries">
+					<div class="grid-item commentaries_title color_text">Комментарии</div>
+					<div class="grid-item border_comment">
+						<a class="grid-item color_text write_comment" href="#!"
+							>НАПИСАТЬ КОММЕНТАРИЙ</a
+						>
+					</div>
+				</div>
+				<div class="grid-item feedback1">
+					<div class="grid-item name_data">
+						<h3>Роман Фетисов</h3>
+						<h3 class="grid-item data">06.06.2023</h3>
+					</div>
+					<h1 class="grid-item commit">Одна из любимых историй</h1>
+					<div class="grid-item all_commit">
+						Смотрел фильм и постановку в театре, но книга это отдельная любовь.
+						Множество интересных цитат и мыслей которые
+						<br />приходиться перечитывать по несколько раз что бы полностью
+						уловить мысль которую закладывал автор. Огромное <br />количество
+						противоречивых моментов от которых испытываешь различные эмоции и
+						хочешь читать дальше. Советую всем, <br />одна из тех книг с которой
+						можно начать читать классику.
+					</div>
+					<a class="grid-item show_more" href="#!">Показать ещё</a>
+					<div class="rating">
+						<div class="rating-area">
+							<input type="radio" id="star-5" name="rating" value="5" />
+							<label for="star-5" title="Оценка «5»"></label>
+							<input type="radio" id="star-4" name="rating" value="4" />
+							<label for="star-4" title="Оценка «4»"></label>
+							<input type="radio" id="star-3" name="rating" value="3" />
+							<label for="star-3" title="Оценка «3»"></label>
+							<input type="radio" id="star-2" name="rating" value="2" />
+							<label for="star-2" title="Оценка «2»"></label>
+							<input type="radio" id="star-1" name="rating" value="1" />
+							<label for="star-1" title="Оценка «1»"></label>
+						</div>
+						<div class="likedis-container">
+							<button class="like-button">👍</button>
+							<span class="like-count">0</span>
+							<button class="like-button">👎</button>
+							<span class="like-count">0</span>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item feedback2">
+					<div class="grid-item name_data">
+						<h3>Роман Закупочный</h3>
+						<h3 class="grid-item data">03.06.2023</h3>
+					</div>
+					<h1 class="grid-item commit">Я купил книгу</h1>
+					<div class="grid-item all_commit">
+						Книга пришла целой, невредимой. Пришла в хорошем качестве. С нее
+						начал знакомиться с классикой. Портрет Дориана Грея <br />очень
+						интересное произведение, я не пожалела, что начала читать классику
+						именно с этой книги. Всем советую. Цена <br />приемлемая.
+					</div>
+					<a class="grid-item show_more" href="#!">Показать ещё</a>
+					<div class="rating">
+						<div class="rating-area2">
+							<input type="radio" id="star-5" name="rating" value="5" />
+							<label for="star-5" title="Оценка «5»"></label>
+							<input type="radio" id="star-4" name="rating" value="4" />
+							<label for="star-4" title="Оценка «4»"></label>
+							<input type="radio" id="star-3" name="rating" value="3" />
+							<label for="star-3" title="Оценка «3»"></label>
+							<input type="radio" id="star-2" name="rating" value="2" />
+							<label for="star-2" title="Оценка «2»"></label>
+							<input type="radio" id="star-1" name="rating" value="1" />
+							<label for="star-1" title="Оценка «1»"></label>
+						</div>
+						<div class="likedis-container2">
+							<button class="like-button2">👍</button>
+							<span class="like-count2">0</span>
+							<button class="like-button2">👎</button>
+							<span class="like-count2">0</span>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item feedback3">
+					<div class="grid-item name_data">
+						<h3>Роман Биполярный</h3>
+						<h3 class="grid-item data">07.06.2023</h3>
+					</div>
+					<h1 class="grid-item commit">Нет</h1>
+					<div class="grid-item all_commit">
+						Читал лет 10 назад, тогда она мне совсем не зашла. Решил перечитать
+						сейчас уже в более осознанном возрасте и , о чудо,
+						<br />ничего не изменилось, она снова мне не понравилась. Убежден,
+						что это одна из самых переоцененных книг на свете. <br />Абсолютно
+						ничего особо интересного и цепляющего в ней нет. Наверное, это
+						первый раз, когда я бы посоветовал посмотреть <br />экранизацию,
+						чтобы не тратить время на прочтение данного произведения.
+					</div>
+					<a class="grid-item show_more" href="#!">Показать ещё</a>
+					<div class="rating">
+						<div class="rating-area3">
+							<input type="radio" id="star-5" name="rating" value="5" />
+							<label for="star-5" title="Оценка «5»"></label>
+							<input type="radio" id="star-4" name="rating" value="4" />
+							<label for="star-4" title="Оценка «4»"></label>
+							<input type="radio" id="star-3" name="rating" value="3" />
+							<label for="star-3" title="Оценка «3»"></label>
+							<input type="radio" id="star-2" name="rating" value="2" />
+							<label for="star-2" title="Оценка «2»"></label>
+							<input type="radio" id="star-1" name="rating" value="1" />
+							<label for="star-1" title="Оценка «1»"></label>
+						</div>
+						<div class="likedis-container3">
+							<button class="like-button3">👍</button>
+							<span class="like-count3">0</span>
+							<button class="like-button3">👎</button>
+							<span class="like-count3">0</span>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<a class="grid-item more-commit" href="#!"
+						>Показать больше комментариев</a
+					>
+				</div>
+			</div>
+			<div class="grid-item footer">
+				<div class="grid-item footer-title">
+					<img
+						src="/Figma Book Catalog MOODUCK/img/main page book/duck.svg"
+						alt=""
+					/>
+					<div class="footer-title-text">MOODUCK</div>
+				</div>
+				<div class="grid-item xz">© Mooduck 2023. All rights reserved</div>
+			</div>
+		</div>
 	</body>
 </html>
